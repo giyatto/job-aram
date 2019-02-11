@@ -64,11 +64,11 @@
 <h1><sitemesh:write property='div.contentH1'/></h1>
 <h2><sitemesh:write property='div.contentH2'/></h2>
 
-<div id="container">
+<!-- <div id="container">
     <div id="body">
         <sitemesh:write property="body"/>
     </div>
-</div>
+</div> -->
 
 </body>
 
