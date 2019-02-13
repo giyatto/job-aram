@@ -5,6 +5,13 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<div id="contentH1">헤드1</div>
-<div id="contentH2">헤드2</div>
+
+
+
+
+<div ng-app="jobAramApp" ng-controller="jobAramController">
+	<menu style="padding-left:0px;"></menu>
+	<list></list>
+	<file-upload></file-upload>
+</div>
 

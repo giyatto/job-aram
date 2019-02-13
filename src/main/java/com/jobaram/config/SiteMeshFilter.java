@@ -9,7 +9,7 @@ public class SiteMeshFilter extends ConfigurableSiteMeshFilter {
 	@Override
 	protected void applyCustomConfiguration(SiteMeshFilterBuilder builder) {
 		// Map default decorator. This shall be applied to all paths if no other paths match.
-	    builder.addDecoratorPath("/*", "/WEB-INF/decorators/defaultDecorator.jsp") 
+	    builder.addDecoratorPath("/main", "/WEB-INF/decorators/defaultDecorator.jsp") 
 	           // Map decorators to path patterns. 
 //	           .addDecoratorPath("/web/**.do*", "/WEB-INF/decorators/defaultDecorator.jsp")
 //	           .addDecoratorPath("/backend/**.do", "/WEB-INF/decorators/adminDecorator.jsp")

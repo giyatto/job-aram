@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
 
     <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/job_aram.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.min.js"></script>
@@ -30,7 +31,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
     <script src="https://angular-file-upload.appspot.com/js/ng-file-upload.min.js"></script>
     <script src="https://angular-file-upload.appspot.com/js/ng-file-upload-shim.js"></script>
+    
     <script src="/static/js/util.js"></script>
+    <script src="/static/js/angular-controller.js"></script>
+    <script src="/static/js/angular-directive.js"></script>
+    <script src="/static/js/angular-service.js"></script>
+    
+   
 </head>
 <body>
 
@@ -45,30 +52,14 @@
             <li><a href="/">자격증 관리</a></li>
             <li><a href="/">취업순위부</a></li>
         </ul>
-       <!--  <ul class="nav navbar-nav navbar-right">
-            <li>
-                <c:choose>
-                    <c:when test="${user.loggedIn}">
-                        ${user.name} logged in&nbsp;&nbsp;
-                    </c:when>
-                    <c:otherwise>
-                        Not logged in.
-                    </c:otherwise>
-                </c:choose>
-                <button class="button danger" onclick="deleteAllCookies()">로그아웃</button>
-            </li>
-        </ul> -->
     </div>
 </nav>
 
-<h1><sitemesh:write property='div.contentH1'/></h1>
-<h2><sitemesh:write property='div.contentH2'/></h2>
-
-<!-- <div id="container">
+<div id="container">
     <div id="body">
         <sitemesh:write property="body"/>
     </div>
-</div> -->
+</div>
 
 </body>
 
