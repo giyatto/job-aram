@@ -6,11 +6,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 
-
-
-
 <div ng-app="jobAramApp" ng-controller="jobAramController">
-	<menu style="padding-left:0px;"></menu>
 	<list></list>
 	<file-upload></file-upload>
 </div>
