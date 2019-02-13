@@ -123,7 +123,7 @@ jobAramApp.controller('jobAramController', [
             }
         }
 
-        init();
+        // init();
 
     }]);
 
