@@ -19,6 +19,8 @@ jobAramApp.controller('jobAramController', [
     '$uibModal',
     function ($q, $scope, $http, $location, jobAramFactory, $mdDialog, $mdConstant, Upload, $uibModal) {
 
+		$scope.studentInfo;
+
 
         $scope.onClickExcelUpload = function ($file) {
             jobAramFactory.setFile($file);
@@ -123,7 +125,24 @@ jobAramApp.controller('jobAramController', [
             }
         }
 
-        // init();
+        function init() {
+            readStudentList();
+        }
+
+        function readStudentList() {
+            var promise = jobAramFactory.getStudentInfo();
+
+            promise.then(function (data) {
+
+                
+            }, function (error) {
+                $scope.error = error;
+            });
+        }
+
+
+
+        init();
 
     }]);
 

@@ -28,10 +28,25 @@
             return deferred.promise;
         }
 
+        function getStudentInfo() {
+            var deferred = $q.defer();
+            $http({
+                method:'POST',
+                url:"/getStudentInfo"
+            }).success(function(data, status, headers, config) {
+                deferred.resolve(data);
+            }).
+            error(function(data, status, headers, config) {
+                deferred.reject(status);
+            });
+            return deferred.promise;
+        }
+
 
         return ({
             setFile:setFile,
-            upload:upload
+            upload:upload,
+            getStudentInfo:getStudentInfo
         });
     }
     ]);
