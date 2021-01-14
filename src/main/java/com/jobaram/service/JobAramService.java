@@ -17,10 +17,7 @@ public class JobAramService {
         Map<Long, Object> parentCatInfoMap = new HashMap<>();
         Map<Long, List<Object>> catInfoMap = new HashMap<>();
         
-        
-		
-        
-        
+
 		return result;
 	}
 
