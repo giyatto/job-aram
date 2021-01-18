@@ -1,16 +1,40 @@
 package com.jobaram.es;
 
 import org.apache.http.HttpHost;
-import org.elasticsearch.client.RestClient;
+//import org.elasticsearch.client.RestClient;
+//import org.elasticsearch.client.RestClientBuilder;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+//import org.elasticsearch.client.RestHighLevelClient;
 
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Configuration
 public class EsConfig {
 
-//    public RestHighLevelClient getClient() {
-//        RestHighLevelClient client = new RestHighLevelClient(
-//                RestClient.builder(
-//                        new HttpHost("192.168.0.13", 9200, "http"),
-//                        new HttpHost("192.168.0.13", 9201, "http")));
-//        return client;
+
+//    public class ElasticsearchConfig {
+//        @Value("#{'${elasticsearch.hosts}'.split(',')}")
+//        private List<String> hosts;
+//
+//        @Value("${elasticsearch.port}")
+//        private int port;
+//
+//        @Bean
+//        public RestHighLevelClient getRestClient() {
+//
+//            List<HttpHost> hostList = new ArrayList<>();
+//            for(String host : hosts) {
+//                hostList.add(new HttpHost(host, port, "http"));
+//            }
+//
+//            RestClientBuilder builder = RestClient.builder(hostList.toArray(new HttpHost[hostList.size()]));
+//            return new RestHighLevelClient(builder);
+//        }
 //    }
 
 
